@@ -97,6 +97,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .header {
+    margin-top: 2%;
+  }
   .logo img {
     width: 20px;
     margin-top: 3px;
@@ -124,11 +127,16 @@ body {
     font-size: 28px;
   }
   .picture {
+    margin-top: 2%;
     width: 100%;
   }
   .picture img {
     width: 350px;
     height: 250px;
     border-radius: 5%;
+  }
+  .write-up ul {
+    text-align: left;
+    margin-left: 15%;
   }
 }
