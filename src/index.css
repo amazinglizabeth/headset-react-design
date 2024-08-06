@@ -97,8 +97,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .header {
-  }
   .logo img {
     width: 20px;
     margin-top: 3px;
@@ -118,6 +116,7 @@ body {
   }
   .write-up {
     width: 100%;
+    text-align: center;
   }
   .write-up h1 {
     margin-top: 5%;
