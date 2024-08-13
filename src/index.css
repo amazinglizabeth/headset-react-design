@@ -1,25 +1,51 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+/* *,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+#root {
+  overflow: hidden;
+}
+
+html {
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+span,
+button,
+a,
+input,
+textarea {
+  font-family: "karla", sans-serif;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
   background-color: #fefefe;
 }
 
 .header {
+  background-color: rgba(250, 250, 250, 1);
   display: flex;
   justify-content: space-between;
-  margin-top: 2%;
+  padding-top: 2%;
 }
 
 .logo {
-  margin-left: 2%;
+  margin-left: 4%;
 }
 
 .logo img {
-  width: 30px;
+  width: 35px;
 }
 .menu {
   margin-bottom: 3%;
@@ -45,43 +71,47 @@ body {
   width: 15px;
   height: 15px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .Hero {
   margin-top: 2%;
   display: flex;
+  padding-bottom: 5%;
 }
 
 .write-up {
   width: 40%;
+  padding-left: 2%;
 }
 
 .write-up h1 {
   padding-left: 5%;
-  font-size: 38px;
+  font-size: 42px;
   color: #504e4d;
 }
 
 .write-up ul {
   color: #504e4d;
-  font-size: 17px;
 }
 
 .write-up li {
   margin-bottom: 1%;
-  font-size: 14px;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .write-up button {
   margin-top: 2%;
   margin-left: 5%;
-  padding: 12px 35px;
+  padding: 14px 45px;
   border: 1px solid #a6a4a4;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #041f20;
+  background-color: rgba(36, 52, 34, 1);
   color: #f1f1f1;
   letter-spacing: 1px;
+  font-size: 16px;
 }
 
 .picture {
@@ -91,9 +121,159 @@ body {
 }
 
 .picture img {
-  width: 640px;
-  height: 450px;
+  width: 670px;
+  height: 510px;
   border-radius: 5%;
+}
+.info {
+  background-color: rgba(207, 169, 49, 1);
+  padding: 4% 4%;
+  display: flex;
+  gap: 10%;
+}
+
+.about {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.about p {
+  font-weight: 600;
+  color: rgba(36, 52, 34, 1);
+}
+.products {
+  background-color: rgba(36, 52, 34, 1);
+  margin-top: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.products h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 28px;
+  color: rgba(230, 230, 230, 1);
+}
+
+.product-pic {
+  display: flex;
+  margin-left: 10%;
+  gap: 3%;
+}
+
+.product-pic img {
+  cursor: pointer;
+}
+
+.product-pic2 img {
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.dealCard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+
+.dealCard p {
+  color: rgba(102, 102, 102, 1);
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.dealCard h4 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.topDeals {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% 4%;
+  gap: 3%;
+  padding-bottom: 3%;
+}
+
+.dealsHeading {
+  text-align: center;
+  font-size: 28px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(217, 217, 217, 1);
+  padding: 2% 4% 1% 4%;
+}
+.footerWrapper img {
+  width: 45px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 123px;
+}
+.newsletter,
+.services {
+  flex: 1;
+}
+.newsletter p {
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  font-weight: 600;
+}
+.subscription {
+  display: flex;
+}
+.subscription input {
+  border: none;
+  outline: none;
+  padding: 17px 20px;
+  margin-right: 3%;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.subscribe-button {
+  padding: 9px 40px;
+  border: 1px solid #a6a4a4;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(36, 52, 34, 1);
+  color: #f1f1f1;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.socials a {
+  margin-right: 4%;
+  color: #694f07f9;
+  font-size: 18px;
+}
+.services {
+  display: flex;
+  gap: 100px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.links p {
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  font-weight: 600;
+}
+.links a {
+  text-decoration: none;
+  color: rgb(78, 77, 77);
+  margin-bottom: 10%;
+  font-size: 16px;
+}
+.copyright {
+  text-align: center;
+  margin-top: 3%;
 }
 
 @media only screen and (max-width: 600px) {
