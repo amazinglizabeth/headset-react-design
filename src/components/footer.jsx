@@ -5,17 +5,25 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <div className="footerWrapper">
-      <img src={Logo} alt="logo" />
-      <div className="footer">
-        <div className="newsletter">
-          <p>Suscribe to our newsletter</p>
-          <div className="subscription">
-            <input type="text" placeholder="eadenike14@gmail.com" />
-            <button className="subscribe-button">Subscribe</button>
+    <div className="bg-gray-100 py-10 px-6 text-gray-700">
+      <div className="flex justify-center mb-6">
+        <img src={Logo} alt="logo" className="w-32" />
+      </div>
+      <div className="flex flex-col md:flex-row justify-between gap-10">
+        <div>
+          <p className="text-lg font-medium">Subscribe to our newsletter</p>
+          <div className="flex mt-3 gap-2">
+            <input
+              type="text"
+              placeholder="eadenike14@gmail.com"
+              className="border border-gray-300 rounded px-3 py-2 w-full md:w-64"
+            />
+            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+              Subscribe
+            </button>
           </div>
-          <p>Follow us on</p>
-          <div className="socials">
+          <p className="mt-4 font-medium">Follow us on</p>
+          <div className="flex gap-4 text-xl mt-2">
             <a href="#">
               <FaFacebook />
             </a>
@@ -27,24 +35,60 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="services">
-          <div className="links">
-            <p>Useful Links</p>
-            <a href="#">Products category</a>
-            <a href="#">Special promo</a>
-            <a href="#">Affliate products</a>
-            <a href="#">Offline stores</a>
+        <div className="flex gap-16">
+          <div>
+            <p className="font-bold mb-2">Useful Links</p>
+            <ul className="space-y-1">
+              <li>
+                <a href="#" className="hover:underline">
+                  Products category
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Special promo
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Affiliate products
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Offline stores
+                </a>
+              </li>
+            </ul>
           </div>
-          <div className="links">
-            <p>Support</p>
-            <a href="#">FAQS</a>
-            <a href="#">Support centre</a>
-            <a href="#">Help centre</a>
-            <a href="#">Join us</a>
+          <div>
+            <p className="font-bold mb-2">Support</p>
+            <ul className="space-y-1">
+              <li>
+                <a href="#" className="hover:underline">
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Support Centre
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Help Centre
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Join Us
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <p className="copyright">&copy; copyright 2024</p>
+      <p className="text-center text-sm mt-8">&copy; copyright 2024</p>
     </div>
   );
 }
