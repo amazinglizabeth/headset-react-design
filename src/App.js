@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./src/components/Header";
-import Hero from "./src/components/Hero";
-import Info from "./src/components/Info";
-import Products from "./src/components/Products";
-import DealData from "./src/components/DealData";
-import Footer from "./src/components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Info from "./components/Info";
+import Products from "./components/Products";
+import DealData from "./components/DealData";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
