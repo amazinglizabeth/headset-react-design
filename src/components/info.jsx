@@ -51,7 +51,7 @@ export default function Info() {
         <img
           src={Support}
           alt="support"
-          className="w-12 h-12 sm:w-14 sm:h-14 mb-3"
+          className="w-12 h-12 sm:w-14 sm:h-14 mb-4"
         />
         <p className="text-xs sm:text-sm md:text-base font-medium text-gray-700 leading-snug">
           Online
