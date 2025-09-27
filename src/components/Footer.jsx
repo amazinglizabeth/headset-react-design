@@ -6,8 +6,13 @@ export default function Footer() {
   return (
     <div className="bg-gray-100 py-10 px-6 text-gray-700">
       {/* Logo */}
-      <div className="flex justify-center mb-6">
-        <img src={Logo} alt="logo" className="w-28 sm:w-32" />
+      <div className="mb-6">
+        <img
+          src={Logo}
+          alt="logo"
+          className="w-10 sm:w-10
+        "
+        />
       </div>
 
       {/* Main Section */}

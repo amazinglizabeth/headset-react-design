@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Logo from "../assets/images/Lizabeth Logo.png";
-import Search from "../assets/icons/search-icon.png";
 import Cart from "../assets/icons/cart.png";
 import Profile from "../assets/icons/profile.png";
 
@@ -11,19 +10,19 @@ export default function Header() {
     <div className="bg-white shadow-md px-6 py-4 flex items-center justify-between relative">
       {/* Logo */}
       <div className="flex items-center">
-        <img src={Logo} alt="logo" className="w-24" />
+        <img src={Logo} alt="logo" className="w-10" />
       </div>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-6 text-gray-700 font-medium">
         <a href="#" className="hover:text-blue-600">
-          Home
-        </a>
-        <a href="#" className="hover:text-blue-600">
           Products
         </a>
         <a href="#" className="hover:text-blue-600">
           About
+        </a>
+        <a href="#" className="hover:text-blue-600">
+          Blog
         </a>
         <a href="#" className="hover:text-blue-600">
           Contact
@@ -32,7 +31,6 @@ export default function Header() {
 
       {/* Icons + Hamburger */}
       <div className="flex items-center gap-4">
-        <img src={Search} alt="search-icon" className="w-5 cursor-pointer" />
         <img src={Cart} alt="cart-icon" className="w-5 cursor-pointer" />
         <img src={Profile} alt="profile-icon" className="w-5 cursor-pointer" />
 
