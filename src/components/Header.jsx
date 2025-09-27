@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Logo from "../assets/images/Lizabeth Logo.png";
 import Search from "../assets/icons/search-icon.png";
 import Cart from "../assets/icons/cart.png";

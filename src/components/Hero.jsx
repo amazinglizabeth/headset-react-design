@@ -1,4 +1,3 @@
-import React from "react";
 import Explorer from "../assets/images/music-man.jpg";
 
 export default function Hero() {

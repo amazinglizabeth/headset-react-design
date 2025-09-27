@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../assets/images/Lizabeth Logo.png";
 import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";

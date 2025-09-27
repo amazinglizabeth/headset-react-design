@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function DealCard({ Image, Title, Price }) {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">

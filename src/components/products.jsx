@@ -1,4 +1,3 @@
-import React from "react";
 import Headphone from "../assets/images/headphone.png";
 import Earpod from "../assets/images/earpods.png";
 import Mouse from "../assets/images/mouse.png";

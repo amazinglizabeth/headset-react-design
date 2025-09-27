@@ -1,4 +1,3 @@
-import React from "react";
 import Global from "../assets/images/global.png";
 import Money from "../assets/images/money.png";
 import Warranty from "../assets/images/warranty.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import Headset from "../assets/images/headset.png";
 import AirpodPro from "../assets/images/airpodPro.png";
 import ElectonicMouse from "../assets/images/electronicMouse.png";
